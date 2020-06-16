@@ -2,8 +2,8 @@
 Serverless bookmarks management
 
 Little JavaScript project where you maintain bookmarks in the folder
-\data and the build the project to read if from local filesystem in
-a web browser (or xcopy to a webhost).
+data and then build the project to read if from local filesystem in
+a web browser (or xcopy to a webhost / usb stick).
 
 Principles: no server-side code, should run from file:// dir
 
@@ -44,3 +44,5 @@ a webpage. Feel free to implement one of the following and ping me:
 * Add more blocks than only bookmarks such as pictures or textual
   information or links to interesting blogs
 * maybe add webpack webserver for hot reload
+* resolve this: https://stackoverflow.com/questions/62405564/tippy-js-z-index-not-working-with-interactivity?noredirect=1#comment110369370_62405564 , made a workaround
+by placing a BR behind the property icon so that it does not overlap
