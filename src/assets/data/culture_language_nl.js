@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Language',
     subtitle: 'Culture > Language > Indo-European Languages > Germanic > West Germanic > Low Franconian > Dutch',
     section: 'language_nl',
@@ -19,4 +17,4 @@ addBookmarks({
 
 
         ]
-    });
+    };

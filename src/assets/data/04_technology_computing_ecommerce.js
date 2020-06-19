@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title : 'Spend Money Online',
     subtitle : 'Technology & Applied Sciences > [ACM] > Applied Computing > E-Commerce',
     section : 'ecommerce',
@@ -89,8 +87,10 @@ addBookmarks({
                 { domain: 'whydonate.nl', url: 'https://www.whydonate.nl/', title: 'whydonate', description: '' },
                 { domain: 'lenderspender.nl', url: 'https://www.lenderspender.nl/', title: 'lenderspender', description: '' },
                 { domain: 'patreon.com', url: 'https://www.patreon.com/', title: 'patreon', description: '' },
+                { domain: 'buymeacoffee.com', url: 'https://www.buymeacoffee.com/', title: 'buymeacoffee', description: '' },
+
             ]
         },
 
     ]
-});
+};

@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'HTML',
     subtitle: 'Technology > Computing > Languages > Markup Language > HTML',
     section: 'html',
@@ -36,4 +34,4 @@ addBookmarks({
         ]
 
 
-});
+};

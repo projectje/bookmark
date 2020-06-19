@@ -1,6 +1,4 @@
-import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+export const category = {
     title: 'History / The Netherlands',
     section: 'history_nl',
     bookmarks:
@@ -38,4 +36,4 @@ addBookmarks({
 
 
         ]
-    });
+    };

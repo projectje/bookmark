@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'News',
     subtitle: 'Society > Journalism',
     section: 'journalism',
@@ -14,8 +12,25 @@ addBookmarks({
             },
 
             {
+                title: 'DPGMedia', section: 'journalism', bookmarks: [
+                    {   domain: 'volkskrant.nl',
+                        url: 'http://ed.je/vk',
+                        title: 'volkskrant',
+                        wikipedia: 'De_Volkskrant' },
+                    { domain: 'krant.volkskrant.nl', url: 'http://ed.je/krant', title: 'volkskrant krant' },
+                    { domain: 'ad.nl', url: 'https://www.ad.nl/', title: 'AD' },
+                    { domain: 'parool.nl', url: 'https://www.parool.nl/', title: 'Parool' },
+                    { domain: 'trouw.nl', url: 'https://www.trouw.nl/', title: 'Trouw' },
+                    { domain: 'nrc.nl', url: 'https://www.nrc.nl/', title: 'NRC' },
+                ]
+            },
+
+            {
                 title: 'Newspapers', section: 'journalism', bookmarks: [
-                    { domain: 'volkskrant.nl', url: 'http://ed.je/vk', title: 'volkskrant' },
+                    {   domain: 'volkskrant.nl',
+                        url: 'http://ed.je/vk',
+                        title: 'volkskrant',
+                        wikipedia: 'De_Volkskrant' },
                     { domain: 'krant.volkskrant.nl', url: 'http://ed.je/krant', title: 'volkskrant krant' },
                     { domain: 'theguardian.com', url: 'https://www.theguardian.com/international', title: 'the guardian' },
                     { domain: 'nos.nl', url: 'https://nos.nl/teletekst', title: 'teletekst' },
@@ -57,4 +72,4 @@ addBookmarks({
 
 
         ]
-});
+};

@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Application Layer',
     subtitle: 'Technology > Computing > Internet > Application Layer',
     section: 'internet',
@@ -33,4 +31,4 @@ addBookmarks({
             },
 
         ]
-    })
+    }

@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'History / Genealogy',
     section: 'genealogy',
     bookmarks:
@@ -21,4 +19,4 @@ addBookmarks({
 
 
         ]
-    });
+    };

@@ -1,6 +1,4 @@
-import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+export const category = {
     title: 'Data',
     subtitle: 'Technology and applied sciences > Computing > Information Systems',
     subtitle_link: 'https://en.wikipedia.org/wiki/Information_system',
@@ -61,4 +59,4 @@ addBookmarks({
 
 
         ]
-    })
+    }

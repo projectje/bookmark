@@ -1,7 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks(
-{
+﻿export const category = {
     title: 'Film',
     subtitle: 'Culture > Arts > Performing Arts > Television & Film',
     section: 'tv',
@@ -45,4 +42,4 @@ addBookmarks(
             },
 
         ]
-});
+};

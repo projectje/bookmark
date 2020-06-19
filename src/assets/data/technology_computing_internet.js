@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Other',
     subtitle: 'Other',
     section: 'internet',
@@ -29,4 +27,4 @@ addBookmarks({
             },
 
         ]
-    })
+    }

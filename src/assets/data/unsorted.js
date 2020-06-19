@@ -1,7 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-var unsorted_bookmarks =
-{
+﻿export const category = {
     title: '',
     section: 'grid1',
     bookmarks:
@@ -11,4 +8,3 @@ var unsorted_bookmarks =
 
         ]
 }
-addBookmarks(unsorted_bookmarks);

@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Meta',
     section: 'meta',
     bookmarks:
@@ -51,4 +49,4 @@ addBookmarks({
 
 
         ]
-    });
+    };

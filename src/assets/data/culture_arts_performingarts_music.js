@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Music',
     subtitle : 'Culture > Arts > Performing Arts > Music',
     section: 'music',
@@ -138,4 +136,4 @@ addBookmarks({
                 ]
             }
         ]
-});
+};

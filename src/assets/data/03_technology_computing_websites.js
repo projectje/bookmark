@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Various IT websites',
     subtitle: 'Technology > Computing > Websites',
     section: 'techsites',
@@ -59,4 +57,4 @@ addBookmarks({
             },
 
         ]
-    })
+    }

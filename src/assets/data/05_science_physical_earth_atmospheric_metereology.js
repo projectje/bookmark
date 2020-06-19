@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Weather',
     subtitle: 'Science > Physical > Earth > Atmospheric > Metereology',
     section: 'metereology',
@@ -16,4 +14,4 @@ addBookmarks({
 
 
         ]
-})
+}

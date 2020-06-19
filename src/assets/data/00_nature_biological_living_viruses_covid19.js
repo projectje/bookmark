@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'covid19',
     subtitle: 'Natural and physical sciences > Biological Science > Viruses > COVID19',
     section: 'covid19',
@@ -8,7 +6,7 @@ addBookmarks({
         [
 
             {
-                title: 'Meta', bookmarks: [
+                title: 'Meta', section: 'Meta', bookmarks: [
                     { domain: 'wikipedia.org', url: 'https://en.wikipedia.org/wiki/Portal:Viruses', title: 'P: viruses' },
                     { domain: 'wikipedia.org', url: 'https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2', title: 'SARS-COV-2' },
                     { domain: 'wikipedia.org', url: 'https://en.wikipedia.org/wiki/COVID-19_pandemic', title: 'COVID-19 pandamic' },
@@ -40,4 +38,4 @@ addBookmarks({
             },
 
         ]
-});
+};

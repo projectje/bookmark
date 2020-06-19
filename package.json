@@ -4,7 +4,6 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "author": "",
@@ -20,6 +19,7 @@
   },
   "dependencies": {
     "@beyonk/google-fonts-webpack-plugin": "^1.2.3",
+    "@wordpress/hooks": "^2.8.0",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",

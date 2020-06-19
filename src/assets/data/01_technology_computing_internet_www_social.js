@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Social',
     subtitle: 'Technology and applied sciences > Computing > Internet > WWW > Social',
     subtitle_link: 'https://en.wikipedia.org/wiki/Category:Social_media',
@@ -191,4 +189,4 @@ addBookmarks({
 
 
         ]
-    })
+    }

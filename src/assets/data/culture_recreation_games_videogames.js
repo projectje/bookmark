@@ -1,6 +1,4 @@
-﻿import { addBookmarks } from '@/module/bookmarks';
-
-addBookmarks({
+﻿export const category = {
     title: 'Videogames',
     subtitle: 'Culture / Recreation / Games / Video games',
     section: 'videogames',
@@ -83,4 +81,4 @@ addBookmarks({
             },
 
         ]
-    });
+    };
