@@ -62,7 +62,6 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname, 'src/util', 'writeFavorite.js')},
         { from: path.resolve(__dirname, 'src/assets/img', 'forkme.png'), to: path.resolve(__dirname, '/img/dist','forkme.png' ) },
       ],
     }),
