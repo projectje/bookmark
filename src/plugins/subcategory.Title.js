@@ -10,6 +10,6 @@ globalHooks.addFilter('bookmark.subcategory', 'subcategory/title', (title, langu
         let postfix = (c.subcategory_link) ? `</a>` : '';
         return `${prefix}<h4>${title}</h4>${postfix}`;
     } else {
-       return titleHtml;
+       return title;
     }
 }, 10);

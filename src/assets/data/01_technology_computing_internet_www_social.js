@@ -3,8 +3,7 @@
     subtitle: 'Technology and applied sciences > Computing > Internet > WWW > Social',
     subtitle_link: 'https://en.wikipedia.org/wiki/Category:Social_media',
     section: 'social',
-    bookmarks:
-        [
+    bookmarks: [
             {
                 title: 'Meta',
                 section: 'social',
@@ -186,7 +185,5 @@
 
                 ]
             },
-
-
         ]
     }

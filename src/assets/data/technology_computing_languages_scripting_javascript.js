@@ -18,6 +18,8 @@
                 title: 'Online IDE',
                 bookmarks:
                 [
+
+                    { domain: 'jsfiddle', url: 'http://jsfiddle.net/', title: 'jsfiddle' },
                     { domain: 'playcode.io', url: 'https://playcode.io/online-javascript-editor', title: 'playcode' },
                     { domain: 'codepen.io', url: 'https://codepen.io', title: 'codepen' },
                     { domain: 'codesandbox.io', url: 'https://codesandbox.io', title: 'codesandbox' },

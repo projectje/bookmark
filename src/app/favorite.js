@@ -1,9 +1,7 @@
-﻿import globalHooks from '@/util/hook';
+﻿import { readFavorites } from '@/util/readFavorite'
+import globalHooks from '@/util/hook';
 import '@/plugins';
 
-/*
- *  Handles Category Data
- */
 function category(categorydata) {
     let categoryTitleHtml = categorydata.title;
     return globalHooks.applyFilters('bookmark.category', categoryTitleHtml, 'en', categorydata);
@@ -34,7 +32,10 @@ function bookmark(subcategorydata) {
 function subcat(bookmarks, categoryslug) {
     globalHooks.doAction('subcategory.before_output');
     var html = '';
+    //console.log( bookmarks);
     bookmarks.forEach(function (subcategorydata) {
+        //console.log( subcategorydata.title);
+        //console.log( subcategorydata);
         html += `<div id="${categoryslug}" class="grid-item col-xs-8"><div class="grid-item-content">` +
             globalHooks.applyFilters('bookmark.subcategory', subcategorydata.title, 'en', subcategorydata) + `<p>`;
         subcategorydata.bookmarks.forEach(function (bookmarkdata) {
@@ -47,7 +48,33 @@ function subcat(bookmarks, categoryslug) {
     return html;
 }
 
-export function addBookmarks(categorydata) {
+export function addFavorites() {
+    var categorydata = {title: 'Favorites', section: 'favorites', bookmarks: []};
+    var bookmarks = readFavorites();
+    const maxBookmarksPerSubcategory = 10
+    const maxSubCategories = 5
+
+    if (!bookmarks || bookmarks.length < maxBookmarksPerSubcategory) { return;}
+
+    let amountAvailable = Math.floor(bookmarks.length/maxBookmarksPerSubcategory);
+    let amountToDisplay = (amountAvailable > maxSubCategories) ? maxSubCategories : amountAvailable;
+    let amountInTitle =  amountToDisplay * maxBookmarksPerSubcategory;
+    categorydata.title = 'Your ' + amountInTitle + ' favorites';
+
+    var currentStart = 0;
+    for (let j=0; j<amountToDisplay; j++) {
+        var currentStart = j*maxBookmarksPerSubcategory;
+        if (bookmarks[currentStart + maxBookmarksPerSubcategory]) {
+            var tempsub = [];
+            for(let i=currentStart; i < currentStart+maxBookmarksPerSubcategory; i++) {
+                if (bookmarks[i][1].length > 2) { tempsub.push(JSON.parse(bookmarks[i][1]));}
+            }
+            let title = (currentStart+1) + ' - ' + (currentStart+maxBookmarksPerSubcategory);
+            let subcategory_temp = { title: title, bookmarks: tempsub};
+            categorydata.bookmarks.push(subcategory_temp);
+        }
+    }
+
     let categoryHtml = category(categorydata);
     let subcategoryHtml = subcat(categorydata.bookmarks, categorydata.section);
     document.getElementById('main_container').insertAdjacentHTML("beforeend", categoryHtml  + subcategoryHtml);

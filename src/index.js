@@ -11,15 +11,12 @@ import 'tippy.js/animations/scale.css';
 import { delegate } from 'tippy.js';
 import data from '@/assets/data';
 import { addBookmarks } from '@/app/bookmark';
+import { addFavorites } from '@/app/favorite';
 
-data.forEach(category => {
-  // todo load the file in data/index only when in view
-  addBookmarks(category);
-});
+addFavorites();
+data.forEach(category => {addBookmarks(category);});
 
 jQueryBridget('masonry', Masonry, $);
 $('.grid').masonry({ itemSelector: '.grid-item', columnWidth: '.grid-sizer', percentPosition: true });
 
-delegate('#main_container', {
-  target: '[data-tippy-content]', allowHTML: true, interactive: true, placement: 'right', theme: 'light', zIndex: 99999
-});
+delegate('#main_container', {target: '[data-tippy-content]', allowHTML: true, interactive: true, placement: 'right', theme: 'light', zIndex: 16777271});
