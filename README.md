@@ -97,12 +97,13 @@ set in the bookmark data
 ## plugin: Achievements
 ```/plugins/property.Achievements.js``` renders the achievements site for a game bookmark
 
-
-
-
-
 # using
 
 - https://github.com/WordPress/gutenberg : for the hooks and plugins
 - https://github.com/desandro/jquery-bridget : for the masonry in default site
 - https://github.com/atomiks/tippyjs: for the popovers
+
+# todo
+
+- shortlinks
+- using both local icons and google favicons

@@ -10,8 +10,11 @@ import 'tippy.js/themes/light.css';
 import 'tippy.js/animations/scale.css';
 import { delegate } from 'tippy.js';
 import data from '@/assets/data';
-import { addBookmarks } from '@/app/bookmark';
-import { addFavorites } from '@/app/favorite';
+//
+// Blocks / Templates
+//
+import { addBookmarks } from '@/templates/bookmark';
+import { addFavorites } from '@/templates/favorite';
 
 //
 // Block 1 contains the favorites of the user

@@ -49,7 +49,6 @@ module.exports = {
       cache: true
     }),
     new HtmlWebpackPlugin({
-      title: "Edjes Fracking Startpagina",
       hash: true,
       meta: {
         description: 'edje',

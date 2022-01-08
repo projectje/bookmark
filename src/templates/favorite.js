@@ -16,7 +16,8 @@ function bookmark(subcategorydata) {
     let bookmarkhtml = {
         title: globalHooks.applyFilters('bookmark.title', subcategorydata.title, 'en', subcategorydata) || '',
         uri: globalHooks.applyFilters('bookmark.uri',subcategorydata.url, 'en', subcategorydata) || '',
-        favicon: globalHooks.applyFilters('bookmark.favicon', subcategorydata.domain, subcategorydata) || '',
+        //favicon: globalHooks.applyFilters('bookmark.favicon', subcategorydata.domain, subcategorydata) || '',
+        favicon: globalHooks.applyFilters('bookmark.favicon', subcategorydata.url, subcategorydata) || '',
         properties: globalHooks.applyFilters('bookmark.property', "", 'en', subcategorydata) || '',
     }
     let combined_html =  globalHooks.applyFilters('bookmark.html', bookmarkhtml, 'en', subcategorydata) || ''
