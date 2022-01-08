@@ -1,0 +1,103 @@
+﻿html {
+    /* webpackIgnore: true */
+    background: url('img/SK-C-214.jpg') no-repeat center fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.42857143;
+    background-color: transparent !important;
+}
+
+#title {
+    color: rgb(255, 255, 255);
+    font-size: calc(100% + 12vw);
+    text-shadow: rgb(3, 3, 3) -1px 4px 9px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+}
+
+a:hover, a:visited {
+    color: #000;
+}
+
+a:link, a:active {
+    color: #999;
+}
+
+
+h2 {
+    color: white;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+a h3 {
+    color: white;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+a h4 {
+    color: black;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+    color: #000;
+}
+
+p a {
+    text-decoration: none;
+}
+
+.grid-sizer,
+.grid-item {
+    width: auto;
+    height: auto;
+    float: left;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.gutter-sizer {
+    width: 2%;
+}
+
+.grid-item-content {
+    height: auto;
+    background: #eee;
+    border: 1px solid hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+    white-space: nowrap;
+    padding: 15px;
+    opacity: 0.7;
+}

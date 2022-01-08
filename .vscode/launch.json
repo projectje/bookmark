@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Dbugggg",
+            "url": "http://localhost:8001",
+            //"webRoot": "${workspaceFolder}",
+            "webRoot": "../src/index.js",
+            "preLaunchTask": "webpack: dev server",
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "sourceMaps": true,
+            "trace": true
+        },
+        {
+            "name": "Iconz",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "icons"]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+﻿const w=(b)=>{var s=localStorage.getItem(b.url);if (s) {var g=JSON.parse(s);g.c=(g.c)?g.c+1:1;localStorage.setItem(b.url,JSON.stringify(g));} else {b.c=1;localStorage.setItem(b.url,JSON.stringify(b));}}
